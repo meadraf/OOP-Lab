@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sabir\\source\\repos\\OOPLAB\\OOPLAB\\OOPLAB.csproj": {}
+    "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sabir\\source\\repos\\OOPLAB\\OOPLAB\\OOPLAB.csproj": {
+    "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sabir\\source\\repos\\OOPLAB\\OOPLAB\\OOPLAB.csproj",
+        "projectUniqueName": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj",
         "projectName": "OOPLAB",
-        "projectPath": "C:\\Users\\sabir\\source\\repos\\OOPLAB\\OOPLAB\\OOPLAB.csproj",
+        "projectPath": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj",
         "packagesPath": "C:\\Users\\sabir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sabir\\source\\repos\\OOPLAB\\OOPLAB\\obj\\",
+        "outputPath": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\programist\\Microsoft Visual Studio\\Shared\\NuGetPackages"
