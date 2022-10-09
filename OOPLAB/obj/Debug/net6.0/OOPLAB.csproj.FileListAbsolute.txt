@@ -1,0 +1,15 @@
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\OOPLAB.csproj.AssemblyReference.cache
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\OOPLAB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\OOPLAB.AssemblyInfoInputs.cache
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\OOPLAB.AssemblyInfo.cs
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\OOPLAB.csproj.CoreCompileInputs.cache
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\bin\Debug\net6.0\OOPLAB.exe
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\bin\Debug\net6.0\OOPLAB.deps.json
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\bin\Debug\net6.0\OOPLAB.runtimeconfig.json
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\bin\Debug\net6.0\OOPLAB.dll
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\bin\Debug\net6.0\OOPLAB.pdb
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\OOPLAB.dll
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\refint\OOPLAB.dll
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\OOPLAB.pdb
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\OOPLAB.genruntimeconfig.cache
+C:\Users\Danie\Desktop\gbgze\OOP-Lab\OOPLAB\obj\Debug\net6.0\ref\OOPLAB.dll

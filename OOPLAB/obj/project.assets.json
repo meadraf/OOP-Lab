@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\sabir\\.nuget\\packages\\": {},
-    "D:\\programist\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Danie\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj",
+      "projectUniqueName": "C:\\Users\\Danie\\Desktop\\gbgze\\OOP-Lab\\OOPLAB\\OOPLAB.csproj",
       "projectName": "OOPLAB",
-      "projectPath": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj",
-      "packagesPath": "C:\\Users\\sabir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\obj\\",
+      "projectPath": "C:\\Users\\Danie\\Desktop\\gbgze\\OOP-Lab\\OOPLAB\\OOPLAB.csproj",
+      "packagesPath": "C:\\Users\\Danie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Danie\\Desktop\\gbgze\\OOP-Lab\\OOPLAB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\programist\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sabir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

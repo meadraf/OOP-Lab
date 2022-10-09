@@ -3,13 +3,19 @@ using System;
 
 namespace OOP 
 {
-    class Program
+     class Program
     {
-        void Main()
+       static void Main()
         {
-            
+          GameModel method = new GameModel();
+          
+       
+       
         }
     }
+
+
+
 }
 
 
