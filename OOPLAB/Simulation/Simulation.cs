@@ -6,28 +6,26 @@ public class Simulation
     public Statistics Statistics;
     public static event Action Update;
     private int _delay;
+    private int _maxTurns;
     
     public Simulation()
     {
         MoveCount = 0;
         _delay = 700;
+        _maxTurns = 100;
         this.Statistics = new Statistics();
     }
 
     public void Start()
     {
-        while (true)
+        while (MoveCount < _maxTurns)
         {
             Update.Invoke();
             Thread.Sleep(_delay);
-            if (MoveCount == 100)
-                return;
             
             Console.Clear();
             Statistics.NextTurn();
             Statistics.Print();
-           
-            
         }
     }
 }
