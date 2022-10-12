@@ -1,6 +1,6 @@
 namespace OOPLAB;
 
-public class Grass
+class Grass : GameObject
 {
     private bool _isGrown;
     private int _growRate;
