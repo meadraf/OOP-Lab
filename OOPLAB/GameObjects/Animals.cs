@@ -9,17 +9,30 @@ namespace OOPLAB
 {
     class Animals : GameObject
     {
-        private int _satiety;
-        private static int _maxSatiety;
-        int Satiety 
+        private int _satiety = 0;
+
+        public int RadiusOfView { get; set; }
+        public int MaxSatiety {get; set;}
+        public int NormalSpeed { get; set;}
+        public int MaxSpeed { get; set;}
+        public int PreysSaturability { get; set;}
+
+
+        public int Satiety
         {
-            get { return _satiety; } 
+            get { return _satiety; }
             set
             {
-                if(value <= _maxSatiety)
+                if (value <= MaxSatiety)
+                {
                     _satiety = value;
+                    
+                }
+                    
             }
         }
+        
+        
 
 
     }

@@ -8,6 +8,9 @@ namespace OOPLAB
 {
     class Preys : Animals
     {
+        public void Eat(ref List<GameObject>[,] Map)
+        {
 
+        }
     }
 }

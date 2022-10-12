@@ -8,6 +8,12 @@ namespace OOPLAB
 {
     class Bull : Preys
     {
-
+        public Bull()
+        {
+            Type = "Preys";
+            NormalSpeed = 2;
+            MaxSatiety = 6;
+            PreysSaturability = 8;
+        }
     }
 }
