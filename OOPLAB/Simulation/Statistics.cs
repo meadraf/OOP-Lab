@@ -1,6 +1,6 @@
 namespace OOPLAB;
 
-public class Statistics
+class Statistics
 {
     private int _animalsCount;
     public int AnimalsCount
@@ -12,24 +12,27 @@ public class Statistics
     public int PredatorsCount { get; private set; }
     public int PreysCount { get; private set; }
     public int TurnsCount { get; private set; }
-    
-    public Statistics()
+    private readonly List<GameObject>[,] _map;
+
+    public Statistics(List<GameObject>[,] map)
     {
+        Simulation.Update += NextTurn;
+        _map = map;
         AnimalsCount = 0;
         PredatorsCount = 0;
         PreysCount = 0;
         TurnsCount = 0;
     }
 
-    public int NextTurn() => TurnsCount++;
+    private void NextTurn() => TurnsCount++;
     
-    public int CountPredators(List<object>[,] map)
+    public int CountPredators()
     {
-        foreach (var cell in map)
+        foreach (var cell in _map)
         {
             foreach (var animal in cell)
             {
-                if (animal.GetType() == typeof(Predators))
+                if (animal is Predators)
                 {
                     PredatorsCount++;
                 }
@@ -39,13 +42,13 @@ public class Statistics
         return PredatorsCount;
     }
 
-    public int CountPreys(List<object>[,] map)
+    public int CountPreys()
     {
-        foreach (var cell in map)
+        foreach (var cell in _map)
         {
             foreach (var animal in cell)
             {
-                if (animal.GetType() == typeof(Preys))
+                if (animal is Preys)
                 {
                     PreysCount++;
                 }
@@ -54,5 +57,4 @@ public class Statistics
 
         return PreysCount;
     }
-  
 }

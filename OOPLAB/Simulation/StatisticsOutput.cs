@@ -1,6 +1,6 @@
 namespace OOPLAB;
 
-public static class StatisticsOutput
+static class StatisticsOutput
 {
     public static void Print(this Statistics statistics)
     {

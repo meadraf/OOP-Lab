@@ -1,6 +1,6 @@
 namespace OOPLAB;
 
-public class Simulation
+class Simulation
 {
     public int MoveCount { get; private set;}
     public Statistics Statistics;
@@ -8,12 +8,12 @@ public class Simulation
     private int _delay;
     private int _maxTurns;
     
-    public Simulation()
+    public Simulation(List<GameObject>[,] map)
     {
         MoveCount = 0;
         _delay = 700;
         _maxTurns = 100;
-        this.Statistics = new Statistics();
+        this.Statistics = new Statistics(map);
     }
 
     public void Start()
@@ -24,7 +24,8 @@ public class Simulation
             Thread.Sleep(_delay);
             
             Console.Clear();
-            Statistics.NextTurn();
+            Statistics.CountPredators();
+            Statistics.CountPreys();
             Statistics.Print();
         }
     }
