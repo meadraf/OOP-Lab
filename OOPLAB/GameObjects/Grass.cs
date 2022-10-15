@@ -2,7 +2,7 @@ namespace OOPLAB;
 
 class Grass : GameObject
 {
-    public bool IsGrown;
+    public bool IsGrown { get; private set; }
     private int _growRate;
     
     public Grass()
