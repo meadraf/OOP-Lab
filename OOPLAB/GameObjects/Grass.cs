@@ -2,30 +2,36 @@ namespace OOPLAB;
 
 class Grass : GameObject
 {
-    private bool _isGrown;
+    public bool IsGrown;
     private int _growRate;
     
     public Grass()
     {
-        _isGrown = true;
+        Saturability = 1;
+        Type = "Grass";
+        IsGrown = true;
         _growRate = 10;
         Simulation.Update += Grow;
+        
     }
     
     public void Eaten()
     {
-        _isGrown = false;
-        _growRate = 0;
+        if (IsGrown)
+        {
+            IsGrown = false;
+            _growRate = 0;
+        }
     }
     
     private void Grow()
     {
-        if (_isGrown == false)
+        if (IsGrown == false)
         {
             _growRate++;
             if (_growRate == 10)
             {
-                _isGrown = true;
+                IsGrown = true;
             }
         }
     }
