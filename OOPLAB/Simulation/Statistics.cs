@@ -28,6 +28,7 @@ class Statistics
     
     public int CountPredators()
     {
+        PredatorsCount = 0;
         foreach (var cell in _map)
         {
             foreach (var animal in cell)
@@ -44,6 +45,7 @@ class Statistics
 
     public int CountPreys()
     {
+        PreysCount = 0;
         foreach (var cell in _map)
         {
             foreach (var animal in cell)

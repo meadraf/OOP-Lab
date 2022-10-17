@@ -9,7 +9,9 @@ namespace OOPLAB
         
         static void Main()
         {
-       
+            GameModel gameModel = new GameModel();
+            Simulation simulation = new Simulation(gameModel.Map);
+            simulation.Start();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,50 +22,50 @@ namespace OOPLAB
                     Map[i, j] = new List<GameObject>();
                 }
             }  
-                GenerateGrass(53, 45);
-                GenerateGrass(30, 24);
-                GenerateGrass(8, 47); 
-                GenerateGrass(8, 2);
-                GenerateGrass(50, 2); 
-                GenerateAnimals();                                                       
+            GenerateGrass(53, 45); 
+            GenerateGrass(30, 24);
+            GenerateGrass(8, 47); 
+            GenerateGrass(8, 2);
+            GenerateGrass(50, 2); 
+            GenerateAnimals();                                                       
         }
 
         private void GenerateAnimals()
         {   
             for (int i = 0; i < 64; i++)
-                {
+            {
                     for (int j = 0; j < 64; j++)
                     {       
-                        int GenerationChance = RandomValue.Next(0, 5);     
+                        int GenerationChance = RandomValue.Next(0, 10);     
                         if(GenerationChance == 3) switch(GenerateRandomValue()) 
                         {
                         case 1:
-                            Map[i,j].Add(new Bear());
+                            new Bear().Add(new Point(i, j), Map);
                             break;
                         case 2:
-                            Map[i,j].Add(new Hyena());
+                            new Hyena().Add(new Point(i, j), Map);
                             break;
                         case 3:
-                            Map[i,j].Add(new Tiger());
+                            new Tiger().Add(new Point(i, j), Map);
                             break;
                         case 4:
-                            Map[i,j].Add(new Wolf());
+                            new Wolf().Add(new Point(i, j), Map);
                             break;
                         case 5:
-                            Map[i,j].Add(new Bull());
+                            new Bull().Add(new Point(i, j), Map);
                             break;    
                         case 6:
-                            Map[i,j].Add(new Cow());
+                            new Cow().Add(new Point(i, j), Map);
                             break;
                         case 7:
-                            Map[i,j].Add(new Rabbit());
+                            new Rabbit().Add(new Point(i, j), Map);
                             break;
                         case 8:
-                            Map[i,j].Add(new Sheep());
+                            new Sheep().Add(new Point(i, j), Map);
                             break; 
                         } 
                     }
-                }    
+            }    
         }  
         private int GenerateRandomValue()
         {   

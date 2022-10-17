@@ -4,10 +4,28 @@
     <projectFile>OOPLAB/OOPLAB.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd97dca9-af6c-43c7-af48-297ff91b1d60" name="Changes" comment="added Move event">
+    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOPLAB/GameModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Grass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Grass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/GameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/GameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/Simulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/Simulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/Statistics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/ref/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/ref/OOPLAB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/refint/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/refint/OOPLAB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/OOPLAB.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/OOPLAB.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/OOPLAB.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/OOPLAB.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/project.nuget.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,30 +38,6 @@
         <entry key="$PROJECT_DIR$" value="Simulation_Anton" />
       </map>
     </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameModel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Animals.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,7 +80,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd97dca9-af6c-43c7-af48-297ff91b1d60" name="Changes" comment="" />
+      <changelist id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="" />
       <created>1664808796809</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -102,6 +96,8 @@
       <workItem from="1665830472440" duration="7000" />
       <workItem from="1665846240592" duration="739000" />
       <workItem from="1666021576483" duration="7649000" />
+      <workItem from="1666034325294" duration="773000" />
+      <workItem from="1666035113565" duration="3346000" />
     </task>
     <task id="LOCAL-00001" summary="added Simulation and Statistics">
       <created>1665607443914</created>
