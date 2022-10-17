@@ -8,6 +8,12 @@ namespace OOPLAB
 {
     class Sheep : Preys
     {
-
+        public Sheep()
+        {
+            Type = "Preys";
+            NormalSpeed = 1;
+            MaxSatiety = 3;
+            Saturability = 4;
+        }
     }
 }
