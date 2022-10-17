@@ -14,7 +14,7 @@ namespace OOPLAB
             NormalSpeed = 2;
             MaxSpeed = 3;
             MaxSatiety = 1;
-            PreysSaturability = 2;
+            Saturability = 2;
         }
     }
 }

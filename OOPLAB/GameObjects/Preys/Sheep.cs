@@ -13,7 +13,7 @@ namespace OOPLAB
             Type = "Preys";
             NormalSpeed = 1;
             MaxSatiety = 3;
-            PreysSaturability = 4;
+            Saturability = 4;
         }
     }
 }
