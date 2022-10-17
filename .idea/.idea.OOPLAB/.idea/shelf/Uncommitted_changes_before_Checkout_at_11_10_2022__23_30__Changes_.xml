@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]" date="1665520246797" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 11.10.2022, 23:30 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="OOPLAB/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="OOPLAB/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="OOPLAB/obj/Debug/net6.0/OOPLAB.assets.cache" />
+    <option name="AFTER_PATH" value="OOPLAB/obj/Debug/net6.0/OOPLAB.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]/OOPLAB.assets.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]/OOPLAB.csproj.AssemblyReference.cache" />
+  </binary>
+</changelist>

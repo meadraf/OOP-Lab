@@ -1,0 +1,84 @@
+Index: OOPLAB/GameObjects/Grass.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/OOPLAB/GameObjects/Grass.cs b/OOPLAB/GameObjects/Grass.cs
+--- a/OOPLAB/GameObjects/Grass.cs	
++++ b/OOPLAB/GameObjects/Grass.cs	
+@@ -4,7 +4,7 @@
+ {
+     private bool _isGrown;
+     private int _growRate;
+-    
++
+     public Grass()
+     {
+         _isGrown = true;
+Index: OOPLAB/Simulation/Simulation.cs
+===================================================================
+diff --git a/OOPLAB/Simulation/Simulation.cs b/OOPLAB/Simulation/Simulation.cs
+--- a/OOPLAB/Simulation/Simulation.cs	
++++ b/OOPLAB/Simulation/Simulation.cs	
+@@ -1,6 +1,6 @@
+ namespace OOPLAB;
+ 
+-public class Simulation
++class Simulation
+ {
+     public int MoveCount { get; private set;}
+     public Statistics Statistics;
+Index: OOPLAB/Simulation/Statistics.cs
+===================================================================
+diff --git a/OOPLAB/Simulation/Statistics.cs b/OOPLAB/Simulation/Statistics.cs
+--- a/OOPLAB/Simulation/Statistics.cs	
++++ b/OOPLAB/Simulation/Statistics.cs	
+@@ -1,6 +1,6 @@
+ namespace OOPLAB;
+ 
+-public class Statistics
++class Statistics
+ {
+     private int _animalsCount;
+     public int AnimalsCount
+@@ -15,15 +15,16 @@
+     
+     public Statistics()
+     {
++        Simulation.Update += NextTurn;
+         AnimalsCount = 0;
+         PredatorsCount = 0;
+         PreysCount = 0;
+         TurnsCount = 0;
+     }
+ 
+-    public int NextTurn() => TurnsCount++;
++    public void NextTurn() => TurnsCount++;
+     
+-    public int CountPredators(List<object>[,] map)
++    public int CountPredators(List<GameObject>[,] map)
+     {
+         foreach (var cell in map)
+         {
+@@ -39,7 +40,7 @@
+         return PredatorsCount;
+     }
+ 
+-    public int CountPreys(List<object>[,] map)
++    public int CountPreys(List<GameObject>[,] map)
+     {
+         foreach (var cell in map)
+         {
+Index: OOPLAB/Simulation/StatisticsOutput.cs
+===================================================================
+diff --git a/OOPLAB/Simulation/StatisticsOutput.cs b/OOPLAB/Simulation/StatisticsOutput.cs
+--- a/OOPLAB/Simulation/StatisticsOutput.cs	
++++ b/OOPLAB/Simulation/StatisticsOutput.cs	
+@@ -1,6 +1,6 @@
+ namespace OOPLAB;
+ 
+-public static class StatisticsOutput
++static class StatisticsOutput
+ {
+     public static void Print(this Statistics statistics)
+     {

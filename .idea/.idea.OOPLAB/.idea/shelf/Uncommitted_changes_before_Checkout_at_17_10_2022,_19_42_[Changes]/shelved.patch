@@ -1,0 +1,13 @@
+Index: OOPLAB/GameObjects/Grass.cs
+===================================================================
+diff --git a/OOPLAB/GameObjects/Grass.cs b/OOPLAB/GameObjects/Grass.cs
+--- a/OOPLAB/GameObjects/Grass.cs	
++++ b/OOPLAB/GameObjects/Grass.cs	
+@@ -12,7 +12,6 @@
+         IsGrown = true;
+         _growRate = 10;
+         Simulation.Update += Grow;
+-        
+     }
+     
+     public void Eaten()
