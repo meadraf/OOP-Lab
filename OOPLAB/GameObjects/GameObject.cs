@@ -9,7 +9,6 @@ namespace OOPLAB
 {
     class GameObject
     {
-        public Point Courdinate {get; private set;}
-        private int Priority;
+      
     }
 }
