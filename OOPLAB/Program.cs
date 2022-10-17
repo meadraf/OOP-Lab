@@ -1,13 +1,15 @@
 ﻿using OOPLAB;
 using System;
+using System.Drawing;
 
-namespace OOP 
+namespace OOPLAB
 {
     class Program
     {
-        void Main()
+        
+        static void Main()
         {
-            
+       
         }
     }
 }
