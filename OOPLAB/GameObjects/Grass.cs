@@ -1,13 +1,35 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+namespace OOPLAB;
 
-namespace OOPLAB
+class Grass : GameObject
 {
-    class Grass : GameObject
+    public bool IsGrown { get; private set; }
+    private int _growRate;
+
+    public Grass()
     {
-        public int q=10;
+        Saturability = 1;
+        Type = "Grass";
+        IsGrown = true;
+        _growRate = 10;
+        Simulation.Update += Grow;
+    }
+
+    public void Eaten()
+    {
+        IsGrown = false;
+        _growRate = 0;
+    }
+
+    private void Grow()
+    {
+        if (IsGrown == false)
+        {
+            _growRate++;
+            if (_growRate == 10)
+            {
+                IsGrown = true;
+            }
+        }
     }
 }
+
