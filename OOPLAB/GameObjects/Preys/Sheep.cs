@@ -14,6 +14,7 @@ namespace OOPLAB
             NormalSpeed = 1;
             MaxSatiety = 3;
             Saturability = 4;
+            RadiusOfView = 3;
         }
     }
 }

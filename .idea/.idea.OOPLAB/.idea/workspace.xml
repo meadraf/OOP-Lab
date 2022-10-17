@@ -4,9 +4,18 @@
     <projectFile>OOPLAB/OOPLAB.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd97dca9-af6c-43c7-af48-297ff91b1d60" name="Changes" comment="">
+    <list default="true" id="cd97dca9-af6c-43c7-af48-297ff91b1d60" name="Changes" comment="Grass updated">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Grass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Grass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Animals.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Animals.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Predators/Bear.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Predators/Bear.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Predators/Hyena.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Predators/Hyena.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Predators/Tiger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Predators/Tiger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Predators/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Predators/Wolf.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Preys/Bull.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Preys/Bull.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Preys/Cow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Preys/Cow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Preys/Rabbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Preys/Rabbit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/GameObjects/Preys/Sheep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameObjects/Preys/Sheep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/Simulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/Simulation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +28,9 @@
         <entry key="$PROJECT_DIR$" value="Simulation_Anton" />
       </map>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/GameObjects/Grass.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,7 +88,7 @@
       <workItem from="1665830152116" duration="61000" />
       <workItem from="1665830472440" duration="7000" />
       <workItem from="1665846240592" duration="739000" />
-      <workItem from="1666021576483" duration="3275000" />
+      <workItem from="1666021576483" duration="6599000" />
     </task>
     <task id="LOCAL-00001" summary="added Simulation and Statistics">
       <created>1665607443914</created>
@@ -134,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665846543399</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Grass updated">
+      <created>1666027948700</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666027948700</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

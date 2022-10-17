@@ -15,8 +15,7 @@ namespace OOPLAB
             MaxSatiety = 20;
             NormalSpeed = 1;
             MaxSpeed = 2;
-            RadiusOfView = 5;
-
+            RadiusOfView = 3;
         }
     }
 }

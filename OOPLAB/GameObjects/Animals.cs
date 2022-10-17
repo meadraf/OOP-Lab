@@ -31,6 +31,11 @@ namespace OOPLAB
             }
         }
 
+        public Animals()
+        {
+            Simulation.Move += Move;
+        }
+
         public void Add(Point newCoordinate, List<GameObject>[,] map)
         {
             map[newCoordinate.X, newCoordinate.Y].Add(this);
