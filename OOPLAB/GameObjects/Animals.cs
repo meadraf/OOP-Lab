@@ -49,6 +49,7 @@ namespace OOPLAB
                 .Where(gameObject => gameObject.Type == Type)
                 .Select(gameObject => (Animals)gameObject)
                 .FirstOrDefault();
+
             
             map[Coordinate.X, Coordinate.Y].Remove(deletedObject);
             return deletedObject;
@@ -101,24 +102,30 @@ namespace OOPLAB
         
         private void Action(List<GameObject>[,] map)
         {
-            if (Satiety == MaxSatiety)
+            if (Satiety == MaxSatiety && target.GetType() == this.GetType())
                 Pairing(map);
             else
                 Eat(map);
         }
         public void Pairing(List<GameObject>[,] map)
         {
+            var a = this;
             var pairingAnimals = map[Coordinate.X, Coordinate.Y]
-               .Where(animal => animal is Animals)
+               .Where(animal => animal.GetType() == target.GetType())
                .Select(animal => (Animals)animal)
                .ToList();
 
             foreach (var animal in pairingAnimals)
+            {
                 animal.Satiety = 0;
+                animal.target = null;
+            }
+                
 
             var newBornAnimal = pairingAnimals.FirstOrDefault();
             newBornAnimal.Add(Coordinate, map);
 
+            
         }
 
         private bool CheckTargetForPredators(GameObject obj)
@@ -136,7 +143,7 @@ namespace OOPLAB
         {
             if (Satiety == MaxSatiety)
             {
-                if (this.GetType() == obj.GetType())
+                if (this.GetType() == obj.GetType() && !ReferenceEquals(this, obj))
                 {
                     var pairingObj = (Animals)obj;
                     return (pairingObj.Satiety == MaxSatiety);
@@ -146,8 +153,23 @@ namespace OOPLAB
         }
 
         private bool CheckTargetForPreys(GameObject obj)
-        {    
-            if(obj is Grass || PairingTargetTest(obj))
+        {
+            //if ((obj is Grass && (Grass)obj.IsGrown) || PairingTargetTest(obj))
+            //{
+            //    target = obj;
+            //    return true;
+            //}
+            if (obj is Grass)
+            {
+                var grass = (Grass)obj;
+                if (grass.IsGrown)
+                {
+                    target = obj;
+                    return true;
+                }
+
+            }
+            if (PairingTargetTest(obj))
             {
                 target = obj;
                 return true;
@@ -191,6 +213,10 @@ namespace OOPLAB
 
         public void Move(List<GameObject>[,] map)
         {
+            if (this is Preys)
+                CheckFieldOfView(map, CheckTargetForPreys);
+            else
+                CheckFieldOfView(map, CheckTargetForPredators);
 
             Point newCoordinate;
             var movedObject = DeleteObject(map, Type);
@@ -206,16 +232,29 @@ namespace OOPLAB
                 newCoordinate += new Size(Coordinate.X, Coordinate.Y);
                 if (!InsideBound(newCoordinate, map))
                 {
-                    newCoordinate = new Point(random.X * (-1), random.Y * (-1));
-                    newCoordinate += new Size(Coordinate.X, Coordinate.Y);
+                    newCoordinate = ChangeDirection(newCoordinate, map);
+                    //newCoordinate = new Point(random.X * (-1), random.Y * (-1));
+                    //newCoordinate += new Size(Coordinate.X, Coordinate.Y);
                 }
             }
             Add(newCoordinate, map);
-            if(newCoordinate == target.Coordinate)
+            if(target != null && newCoordinate == target.Coordinate)
             {
                 Action(map);
             }
 
+        }
+        private Point ChangeDirection(Point newCoordinate, List<GameObject>[,] map)
+        {
+            if (newCoordinate.X >= map.GetLength(0))
+                newCoordinate.X -= 2;
+            if(newCoordinate.X < 0) 
+                newCoordinate.X += 2;
+            if (newCoordinate.Y >= map.GetLength(1))
+                newCoordinate.Y -= 2;
+            if (newCoordinate.Y < 0) 
+                newCoordinate.Y += 2;
+            return newCoordinate;
         }
     }
 }

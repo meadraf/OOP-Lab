@@ -12,8 +12,12 @@ namespace OOPLAB
     {
         public override void Eat(List<GameObject>[,] map)
         {
+
             var prey = DeleteObject(map, "Preys");
-            Satiety += prey.Saturability;
+            if (prey != null)
+                Satiety += prey.Saturability;
+            target = null;
+
         }
        
     }

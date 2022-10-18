@@ -10,16 +10,16 @@ namespace OOPLAB
 {        
     class GameModel
     {
-        public List<GameObject>[,] Map;     
+        public List<GameObject>[,] map;     
         public Random RandomValue = new Random();   
         public GameModel()
         {
-            Map = new List<GameObject>[64, 64]; 
+            map = new List<GameObject>[64, 64]; 
             for (int i = 0; i < 64; i++)
             {
                 for (int j = 0; j < 64; j++)
                 {
-                    Map[i, j] = new List<GameObject>();
+                    map[i, j] = new List<GameObject>();
                 }
             }  
             GenerateGrass(53, 45); 
@@ -35,33 +35,33 @@ namespace OOPLAB
             for (int i = 0; i < 64; i++)
             {
                     for (int j = 0; j < 64; j++)
-                    {       
-                        int GenerationChance = RandomValue.Next(0, 10);     
+                    {
+                    int GenerationChance = RandomValue.Next(0, 10);
                         if(GenerationChance == 3) switch(GenerateRandomValue()) 
                         {
                         case 1:
-                            new Bear().Add(new Point(i, j), Map);
+                            new Bear().Add(new Point(i, j), map);
                             break;
                         case 2:
-                            new Hyena().Add(new Point(i, j), Map);
+                            new Hyena().Add(new Point(i, j), map);
                             break;
                         case 3:
-                            new Tiger().Add(new Point(i, j), Map);
+                            new Tiger().Add(new Point(i, j), map);
                             break;
                         case 4:
-                            new Wolf().Add(new Point(i, j), Map);
+                            new Wolf().Add(new Point(i, j), map);
                             break;
                         case 5:
-                            new Bull().Add(new Point(i, j), Map);
+                            new Bull().Add(new Point(i, j), map);
                             break;    
                         case 6:
-                            new Cow().Add(new Point(i, j), Map);
+                            new Cow().Add(new Point(i, j), map);
                             break;
                         case 7:
-                            new Rabbit().Add(new Point(i, j), Map);
+                            new Rabbit().Add(new Point(i, j), map);
                             break;
                         case 8:
-                            new Sheep().Add(new Point(i, j), Map);
+                            new Sheep().Add(new Point(i, j), map);
                             break; 
                         } 
                     }
@@ -79,8 +79,12 @@ namespace OOPLAB
             {
                 for(int j = x - k; j <= x + k; j++) 
                 {
-                     Map[j,i].Add(new Grass());
+                    var grass = new Grass();
+                    map[j, i].Add(grass);
+                    grass.Coordinate = new Point(j, i);
                 }
+                                    
+                
                 if(k == 6) ex = false;
                 if(ex) k++;
                 else k--;

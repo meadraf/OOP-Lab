@@ -17,8 +17,8 @@ namespace OOPLAB
 
         public bool InsideBound(Point point, List<GameObject>[,] map)
         {
-            return point.X >= 0 && point.Y >= 0
-                                && point.X < map.GetLength(0) && point.Y < map.GetLength(1);
+            return point.X >= 0 && point.Y >= 0 
+                && point.X < map.GetLength(0) && point.Y < map.GetLength(1);
         }
     }
 }

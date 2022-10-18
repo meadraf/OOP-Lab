@@ -12,7 +12,7 @@ namespace OOPLAB
         {
             Type = "Preys";
             NormalSpeed = 1;
-            MaxSatiety = 3;
+            MaxSatiety = 4;
             Saturability = 4;
             RadiusOfView = 3;
         }

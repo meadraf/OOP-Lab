@@ -10,9 +10,11 @@ namespace OOPLAB
     {
         public override void Eat(List<GameObject>[,] map)
         {
+            var a = this;
             var Grass = (Grass)map[Coordinate.X, Coordinate.Y][0];
             Grass.Eaten();
             Satiety += Grass.Saturability;
+            target = null;
         }
     }
 }
