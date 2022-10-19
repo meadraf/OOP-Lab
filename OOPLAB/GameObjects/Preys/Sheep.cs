@@ -10,8 +10,6 @@ namespace OOPLAB
     {
         public Sheep()
         {
-            Type = "Preys";
-            NormalSpeed = 1;
             MaxSatiety = 4;
             Saturability = 4;
             RadiusOfView = 3;

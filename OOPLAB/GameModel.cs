@@ -10,14 +10,16 @@ namespace OOPLAB
 {        
     class GameModel
     {
-        public List<GameObject>[,] map;     
+        public List<GameObject>[,] map;
+        private int _mapLenght;
         public Random RandomValue = new Random();   
         public GameModel()
         {
-            map = new List<GameObject>[64, 64]; 
-            for (int i = 0; i < 64; i++)
+            _mapLenght = 64;
+            map = new List<GameObject>[_mapLenght, _mapLenght]; 
+            for (int i = 0; i < _mapLenght; i++)
             {
-                for (int j = 0; j < 64; j++)
+                for (int j = 0; j < _mapLenght; j++)
                 {
                     map[i, j] = new List<GameObject>();
                 }
@@ -32,12 +34,13 @@ namespace OOPLAB
 
         private void GenerateAnimals()
         {   
-            for (int i = 0; i < 64; i++)
+            for (int i = 0; i < _mapLenght; i++)
             {
-                    for (int j = 0; j < 64; j++)
+                    for (int j = 0; j < _mapLenght; j++)
                     {
-                    int GC = RandomValue.Next(1, 81);     
-                        if(GC == 1 || GC == 2 || GC == 3 || GC == 4) switch(GenerateRandPrey()) 
+                    int generationChance = RandomValue.Next(1, 81);     
+                        if(generationChance < 5) 
+                            switch(GenerateRandPrey()) 
                         {
                         case 1:
                             new Bull().Add(new Point(i, j), map);
@@ -52,10 +55,10 @@ namespace OOPLAB
                             new Sheep().Add(new Point(i, j), map);
                             break;                          
                         }
-                         if(GC == 5) switch(GenerateRandPredator()) 
+                         if(generationChance == 5) switch(GenerateRandPredator()) 
                         {
                         case 5:
-                             new Bear().Add(new Point(i, j), map); 
+                            new Bear().Add(new Point(i, j), map); 
                             break;    
                         case 6:
                             new Hyena().Add(new Point(i, j), map);

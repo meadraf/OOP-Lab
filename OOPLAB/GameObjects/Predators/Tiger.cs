@@ -10,9 +10,7 @@ namespace OOPLAB
     {
         public Tiger()
         {
-            Type = "Predators";
             MaxSatiety = 15;
-            NormalSpeed = 2;
             MaxSpeed = 3;
             RadiusOfView = 4;
         }

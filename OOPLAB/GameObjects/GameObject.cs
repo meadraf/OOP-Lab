@@ -10,7 +10,6 @@ namespace OOPLAB
     class GameObject
     {
         public int Saturability { get; set; }
-        public string Type { get; set; }
         public Point Coordinate {get; set;}
 
         private int _priority;

@@ -11,15 +11,13 @@ namespace OOPLAB
 {
     abstract class Animals : GameObject
     {
-        
+
         private int _satiety = 0;
 
         public GameObject target;
         public int RadiusOfView { get; set; }
-        public int MaxSatiety {get; set;}
-        public int NormalSpeed { get; set;}
-        public int MaxSpeed { get; set;}
-
+        public int MaxSatiety { get; set; }
+        public int MaxSpeed { get; set; }
         public int Satiety
         {
             get { return _satiety; }
@@ -36,102 +34,9 @@ namespace OOPLAB
             Simulation.Move += Move;
         }
 
-        public void Add(Point newCoordinate, List<GameObject>[,] map)
-        {
-            map[newCoordinate.X, newCoordinate.Y].Add(this);
-            Coordinate = newCoordinate;
-        }
-
-        public Animals DeleteObject(List<GameObject>[,] map, string Type)
-        {
-            
-            var deletedObject = map[Coordinate.X, Coordinate.Y]
-                .Where(gameObject => gameObject.Type == Type)
-                .Select(gameObject => (Animals)gameObject)
-                .FirstOrDefault();
-
-            
-            map[Coordinate.X, Coordinate.Y].Remove(deletedObject);
-            return deletedObject;
-        }
-
-        public bool OnBound(Point point)
-        {
-            return Coordinate.X + RadiusOfView == point.X ||
-                Coordinate.X - RadiusOfView == point.X ||
-                Coordinate.Y + RadiusOfView == point.Y ||
-                Coordinate.Y - RadiusOfView == point.Y;
-        }
-
-        public Point TargetMovement(GameObject target)
-        {
-            Point newCoordinate = new Point();
-            Point coordinateDifferences = new Point();
-
-            coordinateDifferences.X = target.Coordinate.X - Coordinate.X;
-            coordinateDifferences.Y = target.Coordinate.Y - Coordinate.Y;
-
-            if (MaxSpeed < Math.Abs(coordinateDifferences.X))
-                newCoordinate.X = MaxSpeed * Math.Sign(coordinateDifferences.X);
-            else
-                newCoordinate.X = coordinateDifferences.X;
-            if (MaxSpeed < Math.Abs(coordinateDifferences.Y))
-                newCoordinate.Y = MaxSpeed * Math.Sign(coordinateDifferences.Y);
-            else
-                newCoordinate.Y = coordinateDifferences.Y;
-
-            newCoordinate.X += Coordinate.X;
-            newCoordinate.Y += Coordinate.Y;
-
-            return newCoordinate;
-        }
-
-        public Point RandomDirection()
-        {
-            Point movePoint = new Point(0, 0);
-            Random random = new Random();
-            while (movePoint.IsEmpty)
-            {
-                movePoint.X = random.Next(-1, 2);
-                movePoint.Y = random.Next(-1, 2);
-            }
-            return movePoint;
-        }
-
-        public virtual void Eat(List<GameObject>[,] map){}
-        
-        private void Action(List<GameObject>[,] map)
-        {
-            if (Satiety == MaxSatiety && target.GetType() == this.GetType())
-                Pairing(map);
-            else
-                Eat(map);
-        }
-        public void Pairing(List<GameObject>[,] map)
-        {
-            var a = this;
-            var pairingAnimals = map[Coordinate.X, Coordinate.Y]
-               .Where(animal => animal.GetType() == target.GetType())
-               .Select(animal => (Animals)animal)
-               .ToList();
-
-            foreach (var animal in pairingAnimals)
-            {
-                animal.Satiety = 0;
-                animal.target = null;
-            }
-                
-
-            var newBornAnimal = pairingAnimals.FirstOrDefault();
-            newBornAnimal.Add(Coordinate, map);
-
-            
-        }
-
         private bool CheckTargetForPredators(GameObject obj)
         {
-  
-            if(obj is Preys || PairingTargetTest(obj))
+            if (obj is Preys || PairingTargetTest(obj))
             {
                 target = obj;
                 return true;
@@ -154,11 +59,6 @@ namespace OOPLAB
 
         private bool CheckTargetForPreys(GameObject obj)
         {
-            //if ((obj is Grass && (Grass)obj.IsGrown) || PairingTargetTest(obj))
-            //{
-            //    target = obj;
-            //    return true;
-            //}
             if (obj is Grass)
             {
                 var grass = (Grass)obj;
@@ -167,7 +67,6 @@ namespace OOPLAB
                     target = obj;
                     return true;
                 }
-
             }
             if (PairingTargetTest(obj))
             {
@@ -211,6 +110,99 @@ namespace OOPLAB
 
         }
 
+        private void Action(List<GameObject>[,] map)
+        {
+            if (Satiety == MaxSatiety && target.GetType() == this.GetType())
+                Pairing(map);
+            else
+                Eat(map);
+        }
+
+        private Animals DeleteObjectForMove(List<GameObject>[,] map)
+        {
+            map[Coordinate.X, Coordinate.Y].Remove(this);
+            return this;
+        }
+
+        private bool OnBound(Point point)
+        {
+            return Coordinate.X + RadiusOfView == point.X ||
+                Coordinate.X - RadiusOfView == point.X ||
+                Coordinate.Y + RadiusOfView == point.Y ||
+                Coordinate.Y - RadiusOfView == point.Y;
+        }
+
+        private Point TargetMovement(GameObject target)
+        {
+            Point newCoordinate = new Point();
+            Point coordinateDifferences = new Point();
+
+            coordinateDifferences.X = target.Coordinate.X - Coordinate.X;
+            coordinateDifferences.Y = target.Coordinate.Y - Coordinate.Y;
+
+            if (MaxSpeed < Math.Abs(coordinateDifferences.X))
+                newCoordinate.X = MaxSpeed * Math.Sign(coordinateDifferences.X);
+            else
+                newCoordinate.X = coordinateDifferences.X;
+            if (MaxSpeed < Math.Abs(coordinateDifferences.Y))
+                newCoordinate.Y = MaxSpeed * Math.Sign(coordinateDifferences.Y);
+            else
+                newCoordinate.Y = coordinateDifferences.Y;
+
+            newCoordinate += new Size(Coordinate.X, Coordinate.Y);
+
+            return newCoordinate;
+        }
+
+        private void Pairing(List<GameObject>[,] map)
+        {
+            var pairingAnimals = map[Coordinate.X, Coordinate.Y]
+               .Where(animal => animal.GetType() == target.GetType())
+               .Select(animal => (Animals)animal)
+               .ToList();
+
+            foreach (var animal in pairingAnimals)
+            {
+                animal.Satiety = 0;
+                animal.target = null;
+            }
+            var newBornAnimal = pairingAnimals.FirstOrDefault();
+            newBornAnimal.Add(Coordinate, map);
+        }
+
+        private Point ChangeDirection(Point newCoordinate, List<GameObject>[,] map)
+        {
+            if (newCoordinate.X >= map.GetLength(0))
+                newCoordinate.X -= 2;
+            if (newCoordinate.X < 0)
+                newCoordinate.X += 2;
+            if (newCoordinate.Y >= map.GetLength(1))
+                newCoordinate.Y -= 2;
+            if (newCoordinate.Y < 0)
+                newCoordinate.Y += 2;
+            return newCoordinate;
+        }
+
+        private Point RandomDirection()
+        {
+            Point movePoint = new Point(0, 0);
+            Random random = new Random();
+            while (movePoint.IsEmpty)
+            {
+                movePoint.X = random.Next(-1, 2);
+                movePoint.Y = random.Next(-1, 2);
+            }
+            return movePoint;
+        }
+
+        public void Add(Point newCoordinate, List<GameObject>[,] map)
+        {
+            map[newCoordinate.X, newCoordinate.Y].Add(this);
+            Coordinate = newCoordinate;
+        }
+
+        public virtual void Eat(List<GameObject>[,] map) { }
+
         public void Move(List<GameObject>[,] map)
         {
             if (this is Preys)
@@ -219,42 +211,23 @@ namespace OOPLAB
                 CheckFieldOfView(map, CheckTargetForPredators);
 
             Point newCoordinate;
-            var movedObject = DeleteObject(map, Type);
+            var movedObject = DeleteObjectForMove(map);
 
             if (target != null)
-            {
                 newCoordinate = TargetMovement(target);
-            }
             else
             {
                 var random = RandomDirection();
                 newCoordinate = random;
                 newCoordinate += new Size(Coordinate.X, Coordinate.Y);
                 if (!InsideBound(newCoordinate, map))
-                {
                     newCoordinate = ChangeDirection(newCoordinate, map);
-                    //newCoordinate = new Point(random.X * (-1), random.Y * (-1));
-                    //newCoordinate += new Size(Coordinate.X, Coordinate.Y);
-                }
-            }
-            Add(newCoordinate, map);
-            if(target != null && newCoordinate == target.Coordinate)
-            {
-                Action(map);
             }
 
-        }
-        private Point ChangeDirection(Point newCoordinate, List<GameObject>[,] map)
-        {
-            if (newCoordinate.X >= map.GetLength(0))
-                newCoordinate.X -= 2;
-            if(newCoordinate.X < 0) 
-                newCoordinate.X += 2;
-            if (newCoordinate.Y >= map.GetLength(1))
-                newCoordinate.Y -= 2;
-            if (newCoordinate.Y < 0) 
-                newCoordinate.Y += 2;
-            return newCoordinate;
+            Add(newCoordinate, map);
+            if (target != null && newCoordinate == target.Coordinate)
+                Action(map);
+
         }
     }
 }

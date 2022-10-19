@@ -10,9 +10,7 @@ namespace OOPLAB
     {
         public Wolf()
         {
-            Type = "Predators";
             MaxSatiety = 12;
-            NormalSpeed = 2;
             MaxSpeed = 3;
             RadiusOfView = 4;
         }

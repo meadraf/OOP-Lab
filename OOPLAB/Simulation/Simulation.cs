@@ -12,7 +12,7 @@ class Simulation
     
     public Simulation(List<GameObject>[,] map)
     {
-        _delay = 50;
+        _delay = 700;
         _maxTurns = 100;
         _statistics = new Statistics(map);
         _map = map;

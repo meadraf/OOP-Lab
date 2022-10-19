@@ -10,8 +10,6 @@ namespace OOPLAB
     {
         public Cow()
         {
-            Type = "Preys";
-            NormalSpeed = 1;
             MaxSatiety = 5;
             Saturability = 5;
             RadiusOfView = 3;

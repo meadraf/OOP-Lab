@@ -8,7 +8,6 @@ class Grass : GameObject
     public Grass()
     {
         Saturability = 1;
-        Type = "Grass";
         IsGrown = true;
         _growRate = 10;
         Simulation.Update += Grow;

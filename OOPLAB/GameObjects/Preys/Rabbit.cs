@@ -10,10 +10,8 @@ namespace OOPLAB
     {
         public Rabbit()
         {
-            Type = "Preys";
-            NormalSpeed = 2;
             MaxSpeed = 3;
-            MaxSatiety = 1;
+            MaxSatiety = 2;
             Saturability = 2;
             RadiusOfView = 4;
         }
