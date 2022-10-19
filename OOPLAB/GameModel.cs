@@ -18,12 +18,9 @@ namespace OOPLAB
             _mapLenght = 64;
             map = new List<GameObject>[_mapLenght, _mapLenght]; 
             for (int i = 0; i < _mapLenght; i++)
-            {
                 for (int j = 0; j < _mapLenght; j++)
-                {
-                    map[i, j] = new List<GameObject>();
-                }
-            }  
+                    map[i, j] = new List<GameObject>();   
+
             GenerateGrass(53, 45); 
             GenerateGrass(30, 24);
             GenerateGrass(8, 47); 
@@ -75,13 +72,13 @@ namespace OOPLAB
         }  
         private int GenerateRandPrey()
         {   
-            int GeneratedValue = RandomValue.Next(1, 5);
-            return GeneratedValue;      
+            int generatedValue = RandomValue.Next(1, 5);
+            return generatedValue;      
         } 
          private int GenerateRandPredator()
         {   
-            int GeneratedValue = RandomValue.Next(4, 9);
-            return GeneratedValue;      
+            int generatedValue = RandomValue.Next(4, 9);
+            return generatedValue;      
         }  
         private void GenerateGrass(int x, int y)
         {  
