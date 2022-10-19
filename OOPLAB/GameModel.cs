@@ -36,8 +36,8 @@ namespace OOPLAB
             {
                     for (int j = 0; j < 64; j++)
                     {
-                    int GenerationChance = RandomValue.Next(0, 10);
-                        if(GenerationChance == 3) switch(GenerateRandomValue()) 
+                    int GC = RandomValue.Next(1, 81);     
+                        if(GC == 1 || GC == 2 || GC == 3 || GC == 4) switch(GenerateRandPrey()) 
                         {
                         case 1:
                             new Bear().Add(new Point(i, j), map);
@@ -51,6 +51,9 @@ namespace OOPLAB
                         case 4:
                             new Wolf().Add(new Point(i, j), map);
                             break;
+                        }
+                         if(GC == 5) switch(GenerateRandPredator()) 
+                        {
                         case 5:
                             new Bull().Add(new Point(i, j), map);
                             break;    
@@ -63,15 +66,20 @@ namespace OOPLAB
                         case 8:
                             new Sheep().Add(new Point(i, j), map);
                             break; 
-                        } 
+                        }
                     }
             }    
         }  
-        private int GenerateRandomValue()
+        private int GenerateRandPrey()
         {   
-            int GeneratedValue = RandomValue.Next(1, 9);
+            int GeneratedValue = RandomValue.Next(1, 5);
             return GeneratedValue;      
-        }   
+        } 
+         private int GenerateRandPredator()
+        {   
+            int GeneratedValue = RandomValue.Next(4, 9);
+            return GeneratedValue;      
+        }  
         private void GenerateGrass(int x, int y)
         {  
             int k = 0; bool ex = true;
@@ -93,3 +101,5 @@ namespace OOPLAB
      
     }
 }
+
+
