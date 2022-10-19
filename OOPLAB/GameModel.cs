@@ -40,32 +40,32 @@ namespace OOPLAB
                         if(GC == 1 || GC == 2 || GC == 3 || GC == 4) switch(GenerateRandPrey()) 
                         {
                         case 1:
-                            new Bear().Add(new Point(i, j), map);
+                            new Bull().Add(new Point(i, j), map);
                             break;
                         case 2:
-                            new Hyena().Add(new Point(i, j), map);
+                            new Cow().Add(new Point(i, j), map);
                             break;
                         case 3:
-                            new Tiger().Add(new Point(i, j), map);
-                            break;
+                            new Rabbit().Add(new Point(i, j), map);
+                            break;                    
                         case 4:
-                            new Wolf().Add(new Point(i, j), map);
-                            break;
+                            new Sheep().Add(new Point(i, j), map);
+                            break;                          
                         }
                          if(GC == 5) switch(GenerateRandPredator()) 
                         {
                         case 5:
-                            new Bull().Add(new Point(i, j), map);
+                             new Bear().Add(new Point(i, j), map); 
                             break;    
                         case 6:
-                            new Cow().Add(new Point(i, j), map);
+                            new Hyena().Add(new Point(i, j), map);
                             break;
                         case 7:
-                            new Rabbit().Add(new Point(i, j), map);
+                            new Tiger().Add(new Point(i, j), map);
                             break;
                         case 8:
-                            new Sheep().Add(new Point(i, j), map);
-                            break; 
+                            new Wolf().Add(new Point(i, j), map);
+                            break;
                         }
                     }
             }    
