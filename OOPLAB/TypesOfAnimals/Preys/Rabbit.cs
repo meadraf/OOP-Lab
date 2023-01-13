@@ -6,14 +6,19 @@ using System.Threading.Tasks;
 
 namespace OOPLAB
 {
-    class Rabbit : Preys
+    class Rabbit : Preys, IFactory
     {
         public Rabbit()
         {
             MaxSpeed = 3;
-            MaxSatiety = 2;
+            MaxSatiety = 1;
             Saturability = 2;
-            RadiusOfView = 4;
+            RadiusOfView = 7;
+            YoungAge = 12;
+        }
+        public Animals BorningChild()
+        {
+            return new Rabbit();
         }
     }
 }

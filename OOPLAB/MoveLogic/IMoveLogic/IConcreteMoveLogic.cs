@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOPLAB
 {
-    class Bull : Preys
+    interface IConcreteMoveLogic
     {
-        public Bull()
-        {
-            MaxSatiety = 6;
-            Saturability = 8;
-            RadiusOfView = 3;
-        }
+        void Move(List<GameObject>[,] map, Animals animal);
     }
 }

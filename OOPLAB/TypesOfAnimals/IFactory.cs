@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace OOPLAB
 {
-    class Cow : Preys
+    interface IFactory
     {
-        public Cow()
-        {
-            MaxSatiety = 5;
-            Saturability = 5;
-            RadiusOfView = 3;
-        }
+        public Animals BorningChild();
     }
 }

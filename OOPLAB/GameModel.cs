@@ -19,8 +19,7 @@ namespace OOPLAB
             map = new List<GameObject>[_mapLenght, _mapLenght]; 
             for (int i = 0; i < _mapLenght; i++)
                 for (int j = 0; j < _mapLenght; j++)
-                    map[i, j] = new List<GameObject>();   
-
+                    map[i, j] = new List<GameObject>();
             GenerateGrass(53, 45); 
             GenerateGrass(30, 24);
             GenerateGrass(8, 47); 
@@ -36,35 +35,35 @@ namespace OOPLAB
                     for (int j = 0; j < _mapLenght; j++)
                     {
                     int generationChance = RandomValue.Next(1, 81);     
-                        if(generationChance < 5) 
+                        if(generationChance < 10) 
                             switch(GenerateRandPrey()) 
                         {
                         case 1:
-                            new Bull().Add(new Point(i, j), map);
-                            break;
+                             ActionsOnMap.AddObject(new Point(i, j), map, new Bull());
+                             break;
                         case 2:
-                            new Cow().Add(new Point(i, j), map);
-                            break;
+                             ActionsOnMap.AddObject(new Point(i, j), map, new Cow());
+                             break;
                         case 3:
-                            new Rabbit().Add(new Point(i, j), map);
-                            break;                    
+                             ActionsOnMap.AddObject(new Point(i, j), map, new Rabbit());
+                             break;                    
                         case 4:
-                            new Sheep().Add(new Point(i, j), map);
-                            break;                          
+                             ActionsOnMap.AddObject(new Point(i, j), map, new Sheep());
+                             break;                          
                         }
                          if(generationChance == 5) switch(GenerateRandPredator()) 
                         {
                         case 5:
-                            new Bear().Add(new Point(i, j), map); 
+                            ActionsOnMap.AddObject(new Point(i, j), map, new Bear()); 
                             break;    
                         case 6:
-                            new Hyena().Add(new Point(i, j), map);
+                            ActionsOnMap.AddObject(new Point(i, j), map, new Hyena()); 
                             break;
                         case 7:
-                            new Tiger().Add(new Point(i, j), map);
+                            ActionsOnMap.AddObject(new Point(i, j), map, new Tiger()); 
                             break;
                         case 8:
-                            new Wolf().Add(new Point(i, j), map);
+                            ActionsOnMap.AddObject(new Point(i, j), map, new Wolf()); 
                             break;
                         }
                     }
@@ -88,8 +87,9 @@ namespace OOPLAB
                 for(int j = x - k; j <= x + k; j++) 
                 {
                     var grass = new Grass();
-                    map[j, i].Add(grass);
                     grass.Coordinate = new Point(j, i);
+                    ActionsOnMap.AddObject(grass.Coordinate, map, grass);
+                    
                 }
                                     
                 

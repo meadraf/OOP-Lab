@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPLAB
 {
-    class Preys : Animals
+    abstract class Preys : Animals
     {
         public override void Eat(List<GameObject>[,] map)
         {

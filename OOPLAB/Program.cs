@@ -12,6 +12,7 @@ namespace OOPLAB
             GameModel gameModel = new GameModel();
             Simulation simulation = new Simulation(gameModel.map);
             simulation.Start();
+
         }
     }
 }

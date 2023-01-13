@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace OOPLAB
 {
-    class Wolf : Predators
+    class Hyena : Predators, IFactory
     {
-        public Wolf()
+        public Hyena()
         {
-            MaxSatiety = 12;
+            MaxSatiety = 20;
             MaxSpeed = 3;
             RadiusOfView = 4;
+            YoungAge = 18;
+        }
+        public Animals BorningChild()
+        {
+            return new Hyena();
         }
     }
 }

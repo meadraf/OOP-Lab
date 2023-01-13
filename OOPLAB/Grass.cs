@@ -3,28 +3,38 @@ namespace OOPLAB;
 class Grass : GameObject
 {
     public bool IsGrown { get; private set; }
-    private int _growRate;
+    public int _growRate;
 
+    public int GrowRate
+    {
+        get { return _growRate; }
+        set 
+        {
+            _growRate = value; 
+            if(_growRate > 10)
+                _growRate = 10;
+        }
+    }
     public Grass()
     {
         Saturability = 1;
         IsGrown = true;
-        _growRate = 10;
+        GrowRate = 10;
         Simulation.Update += Grow;
     }
 
     public void Eaten()
     {
         IsGrown = false;
-        _growRate = 0;
+        GrowRate = 0;
     }
 
     private void Grow()
     {
         if (IsGrown == false)
         {
-            _growRate++;
-            if (_growRate == 10)
+            GrowRate++;
+            if (GrowRate == 10)
             {
                 IsGrown = true;
             }
