@@ -31,16 +31,20 @@ static class StatisticsOutput
 
     private static void PrintPredatorSpeciety(this Statistics statistics, Type type)
     {
+        Console.Write(type.ToString().Replace("OOPLAB.", "") + "s: ");
         if (statistics.CurrentTurnInfo.PredatorSpecietyCounter.ContainsKey(type))
-            Console.WriteLine(type.ToString().Replace("OOPLAB.", "") + "s: " +
-                              statistics.CurrentTurnInfo.PredatorSpecietyCounter[type]);
+            Console.WriteLine(statistics.CurrentTurnInfo.PredatorSpecietyCounter[type]);
+        else
+            Console.Write(0);
     }
 
     private static void PrintPreySpeciety(this Statistics statistics, Type type)
     {
+        Console.Write(type.ToString().Replace("OOPLAB.", "") + "s: ");
         if (statistics.CurrentTurnInfo.PreySpecietyCounter.ContainsKey(type))
-            Console.WriteLine(type.ToString().Replace("OOPLAB.", "") + "s: " +
-                              statistics.CurrentTurnInfo.PreySpecietyCounter[type]);
+            Console.WriteLine(statistics.CurrentTurnInfo.PreySpecietyCounter[type]);
+        else
+            Console.Write(0);
     }
 
     private static void DrawGraph(this Statistics statistics)

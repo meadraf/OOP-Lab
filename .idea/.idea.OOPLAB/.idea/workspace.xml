@@ -4,14 +4,8 @@
     <projectFile>OOPLAB/OOPLAB.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="Improved statistics logic">
-      <change afterPath="$PROJECT_DIR$/OOPLAB/Simulation/TurnInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="small fixes">
       <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/StatisticsOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/StatisticsOutput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +100,7 @@
       <workItem from="1667472687746" duration="2636000" />
       <workItem from="1668866807307" duration="23000" />
       <workItem from="1673111538236" duration="702000" />
-      <workItem from="1673699292253" duration="17363000" />
+      <workItem from="1673699292253" duration="17944000" />
     </task>
     <task id="LOCAL-00001" summary="added Simulation and Statistics">
       <created>1665607443914</created>
@@ -199,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673718911239</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="small fixes">
+      <created>1673719799412</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673719799412</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,9 +229,9 @@
     <MESSAGE value="Simulation refactoring" />
     <MESSAGE value="Grass updated" />
     <MESSAGE value="added Move event" />
-    <MESSAGE value="small fixes" />
     <MESSAGE value="added every animal count output" />
     <MESSAGE value="Improved statistics logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved statistics logic" />
+    <MESSAGE value="small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
   </component>
 </project>
