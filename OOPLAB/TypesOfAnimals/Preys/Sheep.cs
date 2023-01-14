@@ -12,7 +12,7 @@ namespace OOPLAB
         {
             MaxSatiety = 2;
             Saturability = 4;
-            RadiusOfView = 5;
+            RadiusOfView = 20;
             MaxSpeed = 2;
             YoungAge = 12;
         }

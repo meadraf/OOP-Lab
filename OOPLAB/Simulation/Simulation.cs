@@ -7,28 +7,27 @@ class Simulation
     public delegate void AnimalsMove(List<GameObject>[,] map);
     public static event AnimalsMove Move;
     private readonly int _delay;
-    private readonly int _maxTurns;
+    public static int MaxTurns { get; private set; }
     private List<GameObject>[,] _map;
     
     public Simulation(List<GameObject>[,] map)
     {
-        _delay = 50;
-        _maxTurns = 200;
+        _delay = 20;
+        MaxTurns = 200;
         _statistics = new Statistics(map);
         _map = map;
     }
 
     public void Start()
     {
-        while (_statistics.TurnsCount < _maxTurns)
+        while (_statistics.TurnsCount < MaxTurns)
         {
             Update.Invoke();
             Move.Invoke(_map);
             Thread.Sleep(_delay);
             
             Console.Clear();
-            _statistics.CountPredators();
-            _statistics.CountPreys();
+            _statistics.RecordStatistics();
             _statistics.Print();
         }
     }

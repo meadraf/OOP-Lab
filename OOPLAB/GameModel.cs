@@ -34,7 +34,7 @@ namespace OOPLAB
             {
                     for (int j = 0; j < _mapLenght; j++)
                     {
-                    int generationChance = RandomValue.Next(1, 81);     
+                        int generationChance = RandomValue.Next(1, 81);     
                         if(generationChance < 10) 
                             switch(GenerateRandPrey()) 
                         {
@@ -51,7 +51,7 @@ namespace OOPLAB
                              ActionsOnMap.AddObject(new Point(i, j), map, new Sheep());
                              break;                          
                         }
-                         if(generationChance == 5) switch(GenerateRandPredator()) 
+                        if(generationChance == 5) switch(GenerateRandPredator()) 
                         {
                         case 5:
                             ActionsOnMap.AddObject(new Point(i, j), map, new Bear()); 
@@ -89,9 +89,7 @@ namespace OOPLAB
                     var grass = new Grass();
                     grass.Coordinate = new Point(j, i);
                     ActionsOnMap.AddObject(grass.Coordinate, map, grass);
-                    
                 }
-                                    
                 
                 if(k == 6) ex = false;
                 if(ex) k++;

@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj": {}
+    "/Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/OOPLAB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj": {
+    "/Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/OOPLAB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj",
+        "projectUniqueName": "/Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/OOPLAB.csproj",
         "projectName": "OOPLAB",
-        "projectPath": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\OOPLAB.csproj",
-        "packagesPath": "C:\\Users\\sabir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sabir\\OneDrive\\Документы\\GitHub\\OOP-Lab\\OOPLAB\\obj\\",
+        "projectPath": "/Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/OOPLAB.csproj",
+        "packagesPath": "/Users/antonmanikin/.nuget/packages/",
+        "outputPath": "/Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\programist\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sabir\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/antonmanikin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

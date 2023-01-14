@@ -13,7 +13,7 @@ namespace OOPLAB
             MaxSpeed = 3;
             MaxSatiety = 1;
             Saturability = 2;
-            RadiusOfView = 7;
+            RadiusOfView = 20;
             YoungAge = 12;
         }
         public Animals BorningChild()
