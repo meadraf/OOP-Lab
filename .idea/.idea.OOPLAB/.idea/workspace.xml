@@ -4,43 +4,14 @@
     <projectFile>OOPLAB/OOPLAB.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]/OOPLAB.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]/OOPLAB.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022,_23_30_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_2022__23_30__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022,_19_25_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_10_2022__19_25__Changes_1.xml" beforeDir="false" />
+    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="Improved statistics logic">
+      <change afterPath="$PROJECT_DIR$/OOPLAB/Simulation/TurnInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/GameModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/GameModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/Simulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/Simulation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/Statistics.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/StatisticsOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/StatisticsOutput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/TypesOfAnimals/Preys/Bull.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/TypesOfAnimals/Preys/Bull.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/TypesOfAnimals/Preys/Cow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/TypesOfAnimals/Preys/Cow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/TypesOfAnimals/Preys/Rabbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/TypesOfAnimals/Preys/Rabbit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/TypesOfAnimals/Preys/Sheep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/TypesOfAnimals/Preys/Sheep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/apphost" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/ref/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/ref/OOPLAB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/refint/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/refint/OOPLAB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/OOPLAB.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/OOPLAB.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/OOPLAB.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/OOPLAB.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +106,7 @@
       <workItem from="1667472687746" duration="2636000" />
       <workItem from="1668866807307" duration="23000" />
       <workItem from="1673111538236" duration="702000" />
-      <workItem from="1673699292253" duration="16650000" />
+      <workItem from="1673699292253" duration="17363000" />
     </task>
     <task id="LOCAL-00001" summary="added Simulation and Statistics">
       <created>1665607443914</created>
@@ -221,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666184747298</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Improved statistics logic">
+      <created>1673718911239</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673718911239</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +230,7 @@
     <MESSAGE value="added Move event" />
     <MESSAGE value="small fixes" />
     <MESSAGE value="added every animal count output" />
-    <option name="LAST_COMMIT_MESSAGE" value="added every animal count output" />
+    <MESSAGE value="Improved statistics logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved statistics logic" />
   </component>
 </project>

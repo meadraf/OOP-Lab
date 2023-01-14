@@ -21,6 +21,8 @@ static class StatisticsOutput
         PrintPreySpeciety(statistics, typeof(Rabbit));
         PrintPreySpeciety(statistics, typeof(Sheep));
 
+        Console.WriteLine();
+
         if (statistics.TurnsCount == Simulation.MaxTurns)
         {
             DrawGraph(statistics);
@@ -43,20 +45,25 @@ static class StatisticsOutput
 
     private static void DrawGraph(this Statistics statistics)
     {
+        var turnScale = 4;
+        var countScale = 25;
+        var graphY = 20;
+
         Console.ForegroundColor = ConsoleColor.White;
-        Console.WriteLine(500+" animals");
-        for (int i = 20; i >= 0; i--)
+        Console.WriteLine(500 + " animals");
+
+        for (int i = graphY; i >= 0; i--)
         {
             Console.Write("   | ");
 
-            for (int j = 0; j < Simulation.MaxTurns / 4; j++)
+            for (int j = 0; j < Simulation.MaxTurns / turnScale; j++)
             {
-                if (statistics[j * 4].PredatorsCount / 25 == i)
+                if (statistics[j * turnScale].PredatorsCount / countScale == i)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write(".");
                 }
-                else if (statistics[j * 4].PreysCount / 25 == i)
+                else if (statistics[j * turnScale].PreysCount / countScale == i)
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write(".");
@@ -64,6 +71,7 @@ static class StatisticsOutput
                 else
                     Console.Write(" ");
             }
+
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine();
@@ -71,10 +79,16 @@ static class StatisticsOutput
 
         Console.Write(0);
         Console.Write("  |");
-        for (int i = 0; i < Simulation.MaxTurns / 4; i++)
+        for (int i = 0; i < Simulation.MaxTurns / turnScale; i++)
         {
             Console.Write("_");
         }
-        Console.Write(Simulation.MaxTurns+" turns");
+
+        Console.WriteLine(" " + Simulation.MaxTurns + " turns");
+
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Predators: ■");
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("Preys: ■");
     }
 }
