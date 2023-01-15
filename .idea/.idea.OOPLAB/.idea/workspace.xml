@@ -4,8 +4,14 @@
     <projectFile>OOPLAB/OOPLAB.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="small fixes">
-      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/StatisticsOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/StatisticsOutput.cs" afterDir="false" />
+    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/OOPLAB/Simulation/IStatistics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/Statistics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,22 +26,13 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/134622bcf8ad016d3faf7776eb0457b76a5798c537458aa82651ab2cee6e1/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5448f1d3a8b04d4de1f7e86b28315ee3fbfaf4bcd77426a55aa928ad672a071/Comparer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2Fd4ncPohEf5I7GhSk1nDZYUOOy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,7 +45,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/antonmanikin/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/antonmanikin/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/antonmanikin/.local/share/Symbols/src&quot;
+    ]
   }
 }</component>
   <component name="RunManager">
@@ -100,7 +105,11 @@
       <workItem from="1667472687746" duration="2636000" />
       <workItem from="1668866807307" duration="23000" />
       <workItem from="1673111538236" duration="702000" />
-      <workItem from="1673699292253" duration="17944000" />
+      <workItem from="1673699292253" duration="22341000" />
+      <workItem from="1673803473096" duration="609000" />
+      <workItem from="1673805341597" duration="156000" />
+      <workItem from="1673805506518" duration="56000" />
+      <workItem from="1673805571617" duration="894000" />
     </task>
     <task id="LOCAL-00001" summary="added Simulation and Statistics">
       <created>1665607443914</created>
@@ -200,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673719799412</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="output improvements">
+      <created>1673720280998</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673720280998</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +248,7 @@
     <MESSAGE value="added every animal count output" />
     <MESSAGE value="Improved statistics logic" />
     <MESSAGE value="small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fixes" />
+    <MESSAGE value="output improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="output improvements" />
   </component>
 </project>

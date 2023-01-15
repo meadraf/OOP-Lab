@@ -2,7 +2,7 @@ using System.Collections;
 
 namespace OOPLAB;
 
-class Statistics : IEnumerable<TurnInfo>
+class Statistics : IStatistics, IEnumerable<TurnInfo>
 {
     private readonly List<TurnInfo> _turnsCollection;
     public int TurnsCount { get; private set; }

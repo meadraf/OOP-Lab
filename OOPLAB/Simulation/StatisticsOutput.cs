@@ -35,7 +35,7 @@ static class StatisticsOutput
         if (statistics.CurrentTurnInfo.PredatorSpecietyCounter.ContainsKey(type))
             Console.WriteLine(statistics.CurrentTurnInfo.PredatorSpecietyCounter[type]);
         else
-            Console.Write(0);
+            Console.WriteLine(0);
     }
 
     private static void PrintPreySpeciety(this Statistics statistics, Type type)
@@ -44,7 +44,7 @@ static class StatisticsOutput
         if (statistics.CurrentTurnInfo.PreySpecietyCounter.ContainsKey(type))
             Console.WriteLine(statistics.CurrentTurnInfo.PreySpecietyCounter[type]);
         else
-            Console.Write(0);
+            Console.WriteLine(0);
     }
 
     private static void DrawGraph(this Statistics statistics)
