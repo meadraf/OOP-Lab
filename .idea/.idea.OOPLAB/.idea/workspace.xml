@@ -4,14 +4,11 @@
     <projectFile>OOPLAB/OOPLAB.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/OOPLAB/Simulation/IStatistics.cs" afterDir="false" />
+    <list default="true" id="e50df39c-9478-45e4-8f17-50f959e1575a" name="Changes" comment="added IStatistics">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OOPLAB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/Statistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/Statistics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/bin/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/obj/Debug/net6.0/OOPLAB.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/IStatistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/IStatistics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/Simulation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/Simulation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPLAB/Simulation/StatisticsOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OOPLAB/Simulation/StatisticsOutput.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/antonmanikin/Documents/C# Programs/OOP-Lab/OOPLAB/Simulation/Statistics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/134622bcf8ad016d3faf7776eb0457b76a5798c537458aa82651ab2cee6e1/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5448f1d3a8b04d4de1f7e86b28315ee3fbfaf4bcd77426a55aa928ad672a071/Comparer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -109,7 +107,7 @@
       <workItem from="1673803473096" duration="609000" />
       <workItem from="1673805341597" duration="156000" />
       <workItem from="1673805506518" duration="56000" />
-      <workItem from="1673805571617" duration="894000" />
+      <workItem from="1673805571617" duration="6447000" />
     </task>
     <task id="LOCAL-00001" summary="added Simulation and Statistics">
       <created>1665607443914</created>
@@ -216,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673720280998</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added IStatistics">
+      <created>1673806565914</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673806565914</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +254,7 @@
     <MESSAGE value="Improved statistics logic" />
     <MESSAGE value="small fixes" />
     <MESSAGE value="output improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="output improvements" />
+    <MESSAGE value="added IStatistics" />
+    <option name="LAST_COMMIT_MESSAGE" value="added IStatistics" />
   </component>
 </project>

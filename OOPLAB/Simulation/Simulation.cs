@@ -2,13 +2,13 @@ namespace OOPLAB;
 
 class Simulation
 {
-    private readonly Statistics _statistics;
+    private readonly IStatistics _statistics;
     public static event Action Update;
     public delegate void AnimalsMove(List<GameObject>[,] map);
     public static event AnimalsMove Move;
     private readonly int _delay;
     public static int MaxTurns { get; private set; }
-    private List<GameObject>[,] _map;
+    private readonly List<GameObject>[,] _map;
     
     public Simulation(List<GameObject>[,] map)
     {

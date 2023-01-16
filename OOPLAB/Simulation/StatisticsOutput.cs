@@ -2,7 +2,7 @@ namespace OOPLAB;
 
 static class StatisticsOutput
 {
-    public static void Print(this Statistics statistics)
+    public static void Print(this IStatistics statistics)
     {
         Console.WriteLine("Turn " + statistics.TurnsCount + ":");
         Console.WriteLine("Number of predators: " + statistics.CurrentTurnInfo.PredatorsCount);
@@ -29,7 +29,7 @@ static class StatisticsOutput
         }
     }
 
-    private static void PrintPredatorSpeciety(this Statistics statistics, Type type)
+    private static void PrintPredatorSpeciety(this IStatistics statistics, Type type)
     {
         Console.Write(type.ToString().Replace("OOPLAB.", "") + "s: ");
         if (statistics.CurrentTurnInfo.PredatorSpecietyCounter.ContainsKey(type))
@@ -38,7 +38,7 @@ static class StatisticsOutput
             Console.WriteLine(0);
     }
 
-    private static void PrintPreySpeciety(this Statistics statistics, Type type)
+    private static void PrintPreySpeciety(this IStatistics statistics, Type type)
     {
         Console.Write(type.ToString().Replace("OOPLAB.", "") + "s: ");
         if (statistics.CurrentTurnInfo.PreySpecietyCounter.ContainsKey(type))
@@ -47,7 +47,7 @@ static class StatisticsOutput
             Console.WriteLine(0);
     }
 
-    private static void DrawGraph(this Statistics statistics)
+    private static void DrawGraph(this IStatistics statistics)
     {
         var turnScale = 4;
         var countScale = 25;
