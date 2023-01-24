@@ -1,8 +1,4 @@
-﻿using OOPLAB;
-using System;
-using System.Drawing;
-
-namespace OOPLAB
+﻿namespace OOPLAB
 {
     class Program
     {
@@ -11,10 +7,7 @@ namespace OOPLAB
         {
             GameModel gameModel = new GameModel();
             Simulation simulation = new Simulation(gameModel.map);
-            simulation.Start();
-
+            simulation.Start(); 
         }
     }
 }
-
-

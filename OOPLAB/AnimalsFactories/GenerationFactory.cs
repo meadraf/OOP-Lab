@@ -1,0 +1,9 @@
+
+
+namespace OOPLAB
+{
+    class GenerationFactory
+    {
+        
+    }
+}
