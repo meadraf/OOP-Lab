@@ -42,7 +42,6 @@ namespace OOPLAB
             DataNew = UserNumber();     
             Setter(factory, DataNew, CoordOfAnimal, _mapLenght, map);
 
-            
             factory.SetFactory(new BullFactory());
             Console.WriteLine("Print start number of Bulls:");
             DataNew = UserNumber();     

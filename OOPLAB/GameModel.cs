@@ -3,8 +3,7 @@
      class GameModel
     {
         public List<GameObject>[,] map;
-        public int _mapLenght = 64; 
-        
+        public int _mapLenght = 64;       
         public GameModel()
         {
             map = new List<GameObject>[_mapLenght, _mapLenght]; 

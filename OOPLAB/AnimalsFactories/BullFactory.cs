@@ -6,7 +6,7 @@ namespace OOPLAB
     {
         public void Generation(List<GameObject>[,] map, Point Coordinate)
         {
-            ActionsOnMap.AddObject(Coordinate, map, new Bull());
+             ActionsOnMap.AddObject(Coordinate, map, new Bull()); 
         }
     }
 }
